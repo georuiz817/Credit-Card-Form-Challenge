@@ -1,10 +1,14 @@
-import React  from 'react';
+import React, { useState} from 'react';
 import {Container, Col, Row} from 'react-bootstrap';
 
 
 const CreditBox = () => {
 
-  //const [Memos, setMemos] = useState([]);
+  const [CardNum, setCardNum] = useState('');
+  const [CardHolder, setCardHolder] = useState('');
+  const [ExpM, setExpM] = useState('');
+  const [ExpY, setExpY] = useState('');
+  const [Cvv, setCvv] = useState('');
 
    return (
             <div className='CreditBox'>
@@ -13,7 +17,7 @@ const CreditBox = () => {
                   <Row>
                     <Col>
                     <label for='cardnumber'>Card Number</label>
-                    <input className="form-control" type="text" name="cardnumber"/>
+                    <input className="form-control" value={CardNum} type="text" name="cardnumber" onChange={(e) => setCardNum(e.target.value)}/>
                     </Col>
                   </Row>
                   <Row>
