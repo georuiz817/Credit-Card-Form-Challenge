@@ -1,5 +1,5 @@
 import React  from 'react';
-import { Col, Row} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 
 
 const CreditBox = () => {
@@ -60,7 +60,7 @@ const CreditBox = () => {
                     </Col>
                     <Col className='cvv-class' lg={4}>
                       <label for='cvv'>CVV</label>
-                      <input id='cvv'  className="form-control" type="text"  placeholder="CVV" name="cvv"/>
+                      <input id='cvv'  className="form-control" type="number" max='9999'  placeholder="CVV" name="cvv"/>
                     </Col>
                   </Row>
                   <Row>
@@ -70,7 +70,7 @@ const CreditBox = () => {
                   </Row>
                 </form>
             </div>
-            </div>
+          </div>
             )
           }
 
