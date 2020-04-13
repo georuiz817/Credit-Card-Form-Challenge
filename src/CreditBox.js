@@ -15,7 +15,7 @@ const CreditBox = () => {
             <div className='card-info'>
                 <Row className='top'>
                     <Col>
-                    <img width='50%' height='150%' src='https://usa.visa.com/dam/VCOM/regional/lac/ENG/Default/Partner%20With%20Us/Payment%20Technology/visapos/full-color-800x450.jpg'/>
+                    <img  alt='n/a' width='50%' height='150%' src='https://usa.visa.com/dam/VCOM/regional/lac/ENG/Default/Partner%20With%20Us/Payment%20Technology/visapos/full-color-800x450.jpg'/>
                     </Col>
                     <Col>
                     <img id='chip' src='https://cdn4.iconfinder.com/data/icons/modern-future-technology/128/credit-card-chip-ol-512.png' width='30%' height='150%' alt='n/a'/>

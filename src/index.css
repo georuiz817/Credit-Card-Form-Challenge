@@ -55,7 +55,8 @@ label{
 }
 
 #PreviewNum{
-  width: 50%;
+  width: 70%;
+  margin-top: 15%;
   }
 
 .card-info{
@@ -63,7 +64,7 @@ label{
 }
 
 .middle{
- margin-top: 10%;
+ margin-top: 1%;
 }
 
 .bottom{
