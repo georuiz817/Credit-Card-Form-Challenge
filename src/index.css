@@ -36,3 +36,37 @@ label{
   margin-top: 5%;
 }
 
+.Card{
+  background-image: url('https://wallpapercave.com/wp/wp2249067.jpg');
+  background-size: cover;
+  width: 35%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px black;
+  position: fixed;
+  top: 20%;
+  left: 60%;
+  margin-top: 5%;
+  height: 60%;
+  color: white;
+}
+
+#chip{
+  float: right;
+}
+
+#PreviewNum{
+  width: 50%;
+  }
+
+.card-info{
+  padding: 5%;
+}
+
+.middle{
+ margin-top: 10%;
+}
+
+.bottom{
+  margin-top: 20%;
+}
+
