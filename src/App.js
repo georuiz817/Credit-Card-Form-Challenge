@@ -1,7 +1,7 @@
 import React from 'react';
 import CreditBox from './CreditBox';
-import './index.css'
-
+import './index.css';
+ 
 
 function App() {
   return (

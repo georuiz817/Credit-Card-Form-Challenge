@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 import {Col, Row} from 'react-bootstrap';
-
-
+ 
 const CreditBox = () => {
 
   const [CardNum, setCardNum] = useState('');
@@ -17,7 +16,7 @@ const CreditBox = () => {
                 <Row>
                     <Col>
                         <label for='cardnumber'>Card Number</label>
-                        <input className="form-control" value={CardNum} type="number" name="cardnumber" onChange={(e)=> setCardNum(e.target.value)}/>
+                        <input className="form-control" value={CardNum}  oninput="if(value.length>16)value=value.slice(0,16)" type="number" name="cardnumber" onChange={(e)=> setCardNum(e.target.value)}/>
                     </Col>
                 </Row>
                 <Row>
@@ -49,7 +48,7 @@ const CreditBox = () => {
                         <label for='year'>
                           <br></br>
                         </label>
-                        <select type="select" value={ExpY} name="exp" class="form-control exp" onChange={(e)=> setExpY(e.target.value)}>
+                        <select type="select" value={ExpY} name="exp" id='year' class="form-control exp" onChange={(e)=> setExpY(e.target.value)}>
                             <option value="" disabled="disabled" selected="selected">Year</option>
                             <option value={2020}>2020</option>
                             <option value={2021}>2021</option>
@@ -71,7 +70,7 @@ const CreditBox = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <input className="btn btn-warning" type="submit" value="Submit" />
+                        <input className="btn btn-primary" type="submit" value="Submit" />
                     </Col>
                 </Row>
             </form>

@@ -1,31 +1,32 @@
 html{
-  background-color: lightblue;
-}
-
-body{
-  background-color: lightblue;
+  background-color: #ddeefc;
 }
 
 .CreditBox{
   background-color: white;
-  width: 25%;
-  border-radius: 15px;
+  width: 35%;
+  border-radius: 5px;
   box-shadow: 10px 10px 5px black;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 5%;
+}
+
+#year{
+  margin-left: -20%;
 }
 
 .form-bar{
   width: 90%;
   margin-left: 5%;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 label{
   font-size: 60%;
- white-space: nowrap;
+  white-space: nowrap;
  
 }
 
@@ -34,6 +35,14 @@ label{
   margin-top: 5%;
 }
 
-
+.CreditBox .card {
+  position: fixed;
+  background-color: purple;
+  width: 70%;
+  margin-left: 15%;
+  height: 50%;
+  margin-top: -100px;
+  user-select: none;
+}
 
 
