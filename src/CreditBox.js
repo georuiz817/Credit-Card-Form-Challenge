@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import {Container, Col, Row} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 
 
 const CreditBox = () => {
@@ -12,6 +12,13 @@ const CreditBox = () => {
 
    return (
             <div className='CreditBox'>
+              <div>
+                {CardNum}
+                {CardHolder}
+                {ExpM}
+                {ExpY}
+                {Cvv}
+              </div>
               <div className="form-group">
                 <form className="form-bar">
                   <Row>
@@ -23,13 +30,13 @@ const CreditBox = () => {
                   <Row>
                     <Col>
                     <label for='cardholder'>Card Holder</label>
-                      <input className="form-control" type="text" name="cardholder"/>
+                      <input className="form-control" value={CardHolder} type="text" name="cardholder" onChange={(e) => setCardHolder(e.target.value)}/>
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={4}>
                       <label for='month'>Expiration Date</label>
-                      <select type="select" name="exp" class="form-control exp">
+                      <select type="select" value={ExpM} name="exp" class="form-control exp" onChange={(e) => setExpM(e.target.value)}>
                         <option value="" disabled="disabled" selected="selected">Mon</option>
                         <option value={1}>01</option>
                         <option value={2}>02</option>
@@ -47,7 +54,7 @@ const CreditBox = () => {
                     </Col>
                     <Col xs={4}>
                       <label for='year'><br></br></label>
-                      <select type="select" name="exp" class="form-control exp">
+                      <select type="select" value={ExpY} name="exp" class="form-control exp" onChange={(e) => setExpY(e.target.value)}>
                         <option value="" disabled="disabled" selected="selected">Year</option>
                         <option value={2020}>2020</option>
                         <option value={2021}>2021</option>
@@ -64,7 +71,7 @@ const CreditBox = () => {
                     </Col>
                     <Col className='cvv-class' lg={4}>
                       <label for='cvv'>CVV</label>
-                      <input id='cvv'  className="form-control" type="number" max='9999'  placeholder="CVV" name="cvv"/>
+                      <input id='cvv' className="form-control" value={Cvv} type="number" max='9999'  placeholder="CVV" name="cvv" onChange={(e) => setCvv(e.target.value)}/>
                     </Col>
                   </Row>
                   <Row>
