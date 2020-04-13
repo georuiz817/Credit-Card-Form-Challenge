@@ -9,9 +9,10 @@ html{
   box-shadow: 10px 10px 5px black;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   margin-top: 5%;
+  height: 60%;
 }
 
 #year{
@@ -21,7 +22,7 @@ html{
 .form-bar{
   width: 90%;
   margin-left: 5%;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 label{
@@ -34,15 +35,4 @@ label{
   width: 100%;
   margin-top: 5%;
 }
-
-.CreditBox .card {
-  position: fixed;
-  background-color: purple;
-  width: 70%;
-  margin-left: 15%;
-  height: 50%;
-  margin-top: -100px;
-  user-select: none;
-}
-
 
