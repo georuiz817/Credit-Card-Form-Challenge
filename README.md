@@ -15,16 +15,16 @@ React/yarn
 
 ## Installing
 
-Git clone https://github.com/georuiz817/portfolio.git
-cd into project file
-yarn start
+Git clone https://github.com/georuiz817/portfolio.git  
+cd into project file  
+yarn start  
 project will run on http://localhost:3000
 
 ## Built With
 
-Web Framework - JavaScript/React (hooks for state)
-Design -  React Boostrap/CSS
-Package Manager: Yarn
+Web Framework - JavaScript/React (hooks for state)  
+Design -  React Boostrap/CSS  
+Package Manager: Yarn  
 
 ## Authors
 
