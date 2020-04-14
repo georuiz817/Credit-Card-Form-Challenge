@@ -9,7 +9,7 @@ html{
   box-shadow: 10px 10px 5px black;
   position: fixed;
   top: 50%;
-  left: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 5%;
   height: 60%;
@@ -26,7 +26,7 @@ html{
 }
 
 label{
-  font-size: 60%;
+  font-size: 100%;
   white-space: nowrap;
  
 }
@@ -36,38 +36,7 @@ label{
   margin-top: 5%;
 }
 
-.Card{
-  background-image: url('https://wallpapercave.com/wp/wp2249067.jpg');
-  background-size: cover;
-  width: 35%;
-  border-radius: 5px;
-  box-shadow: 10px 10px 5px black;
-  position: fixed;
-  top: 20%;
-  left: 60%;
-  margin-top: 5%;
-  height: 60%;
-  color: white;
-}
-
-#chip{
-  float: right;
-}
-
-#PreviewNum{
-  width: 70%;
-  margin-top: 15%;
-  }
-
-.card-info{
-  padding: 5%;
-}
-
-.middle{
- margin-top: 1%;
-}
-
-.bottom{
-  margin-top: 20%;
+#PaymentForm {
+  background-color: #ddeefc;
 }
 

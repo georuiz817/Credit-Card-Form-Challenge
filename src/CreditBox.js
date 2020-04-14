@@ -1,42 +1,36 @@
 import React, { useState} from 'react';
 import {Col, Row} from 'react-bootstrap';
- 
+import Cards from 'react-credit-cards';
+import 'react-credit-cards/es/styles-compiled.css';
+
 const CreditBox = () => {
 
   const [CardNum, setCardNum] = useState('');
   const [CardHolder, setCardHolder] = useState('');
-  const [ExpM, setExpM] = useState('MM');
-  const [ExpY, setExpY] = useState('YY');
+  const [ExpM, setExpM] = useState('');
+  const [ExpY, setExpY] = useState('');
   const [Cvv, setCvv] = useState('');
+  const [Focus, setFocus] = useState('')
+
+
+  let handleInputFocus = (e) => {
+    setFocus({ Focus: e.target.name });
+    console.log({Focus})
+  }
+
+
+
 
    return (
     <div>
-        <div className='Card'>
-            <div className='card-info'>
-                <Row className='top'>
-                    <Col>
-                    <img  alt='n/a' width='50%' height='150%' src='https://usa.visa.com/dam/VCOM/regional/lac/ENG/Default/Partner%20With%20Us/Payment%20Technology/visapos/full-color-800x450.jpg'/>
-                    </Col>
-                    <Col>
-                    <img id='chip' src='https://cdn4.iconfinder.com/data/icons/modern-future-technology/128/credit-card-chip-ol-512.png' width='30%' height='150%' alt='n/a'/>
-                    </Col>
-                </Row>
-                <br></br>
-                <Row className='middle'>
-                    <Col>
-                    <input id="PreviewNum" className="form-control" maxLength={16} value={CardNum}/></Col>
-                </Row>
-                <Row className='bottom'>
-                    <Col sm={6}>
-                    <p>Card Holder</p>
-                    <p>{CardHolder}</p>
-                    </Col>
-                    <Col sm={6}>
-                    <p>Expires</p>
-                    <span value='M'>{ExpM}</span><span>/</span><span>{ExpY}</span>
-                    </Col>
-                </Row>
-            </div>
+        <div id="PaymentForm">
+            <Cards
+                cvc={Cvv}
+                expiry={ExpM + ExpY}
+                name={CardHolder}
+                focus={Focus}
+                number={CardNum}
+            />
         </div>
         <div className='CreditBox'>
             <div className="form-group">
@@ -59,18 +53,18 @@ const CreditBox = () => {
                             <select type="select" value={ExpM} name="exp" class="form-control exp" onChange={(e)=>
                             setExpM(e.target.value)}>
                                 <option value="" disabled="disabled" selected="selected">Mon</option>
-                                <option value={1}>01</option>
-                                <option value={2}>02</option>
-                                <option value={3}>03</option>
-                                <option value={4}>04</option>
-                                <option value={5}>05</option>
-                                <option value={6}>06</option>
-                                <option value={7}>07</option>
-                                <option value={8}>08</option>
-                                <option value={9}>09</option>
-                                <option value={10}>10</option>
-                                <option value={11}>11</option>
-                                <option value={12}>12</option>
+                                <option value={'01'}>01</option>
+                                <option value={'02'}>02</option>
+                                <option value={'03'}>03</option>
+                                <option value={'04'}>04</option>
+                                <option value={'05'}>05</option>
+                                <option value={'06'}>06</option>
+                                <option value={'07'}>07</option>
+                                <option value={'08'}>08</option>
+                                <option value={'09'}>09</option>
+                                <option value={'10'}>10</option>
+                                <option value={'11'}>11</option>
+                                <option value={'12'}>12</option>
                             </select>
                         </Col>
                         <Col xs={4}>
@@ -95,7 +89,7 @@ const CreditBox = () => {
                         </Col>
                         <Col className='cvv-class' lg={4}>
                             <label for='cvv'>CVV</label>
-                            <input id='cvv' className="form-control" value={Cvv} type="number" max='9999' placeholder="CVV" name="cvv" onChange={(e)=> setCvv(e.target.value)}/>
+                            <input id='cvv' onFocus={handleInputFocus} className="form-control" value={Cvv} type="number" max='9999' placeholder="CVV" name="Cvv" onChange={(e)=> setCvv(e.target.value)}/>
                         </Col>
                     </Row>
                     <Row>
