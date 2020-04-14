@@ -1,33 +1,32 @@
 ![Website](/src/homePhoto.png)
 
-Credit Card Challenge:
+## Credit Card Challenge:
 
 Designed a user friendly form that would be reflected on the credit card example using React Hooks. 
 
 Ended up using a nice little package called react-credit-cards for the Credit Card example. Manipulating and 
 taking advantage of packages are great to save time and learn how to use other peoples work. This package solved my problem on having a quick component that would reflect my state. 
 
-What I loved about this project was using Bootstrap to make the form responsive. Bootstrap is probably my favorite tool for doing so compared to manually using media queries etc. Something I would say that I found difficult was making the Credit Card myself and getting it on the page correctly. I felt the design from the package was exactly what I needed. 
+What I loved about this project was using Bootstrap to make the form responsive. Bootstrap is probably my favorite tool for doing so compared to manually using media queries etc. 
 
-Prerequisites
+## Prerequisites
 
-React
-yarn
+React/yarn
 
-Installing
+## Installing
 
 Git clone https://github.com/georuiz817/portfolio.git
 cd into project file
 yarn start
 project will run on http://localhost:3000
 
-Built With
+## Built With
 
 Web Framework - JavaScript/React (hooks for state)
 Design -  React Boostrap/CSS
 Package Manager: Yarn
 
-Authors
+## Authors
 
 George Ruiz - Full Stack Web Developer
 
