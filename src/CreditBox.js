@@ -9,14 +9,14 @@ const CreditBox = () => {
   const [CardHolder, setCardHolder] = useState('');
   const [ExpM, setExpM] = useState('');
   const [ExpY, setExpY] = useState('');
-  const [CVC, setCVC] = useState('');
+  const [cvc, setcvc] = useState('');
 
 
   return (
     <div>
         <div id="PaymentForm">
             <Cards
-                cvc={CVC}
+                cvc={cvc}
                 expiry={ExpM + ExpY}
                 name={CardHolder}
                 number={CardNum}
@@ -79,7 +79,7 @@ const CreditBox = () => {
                         </Col>
                         <Col className='cvv-class' lg={4}>
                             <label htmlFor='cvv'>CVV</label>
-                            <input id='cvv' className="form-control" value={CVC} type="text" placeholder="CVV" name="CVC" onChange={(e)=> setCVC(e.target.value)}/>
+                            <input id='cvv' className="form-control" value={cvc} type="text" placeholder="CVV" name="CVC" onChange={(e)=> setcvc(e.target.value)}/>
                         </Col>
                     </Row>
                     <Row>
