@@ -90,7 +90,7 @@ const CreditBox = () => {
                 </form>
             </div>
         </div>
-    </div>
+    </div> 
     )
   }
 
