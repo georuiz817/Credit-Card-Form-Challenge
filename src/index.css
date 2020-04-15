@@ -12,7 +12,7 @@ html{
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 5%;
+  margin-top: 6%;
   height: 60%;
 }
 
@@ -39,5 +39,6 @@ label{
 
 #PaymentForm {
   background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+  margin-top: 1%;
 }
 

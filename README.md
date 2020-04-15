@@ -1,4 +1,4 @@
-![Website](/src/newHome.png)
+![Website](/src/finalImg.png)
 
 ## Credit Card Challenge
 
