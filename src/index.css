@@ -1,14 +1,15 @@
 html{
-  background-color: #ddeefc;
+  background-color: #0abcf9;
+  background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
 }
 
 .CreditBox{
   background-color: white;
   width: 35%;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 5%;
@@ -37,6 +38,6 @@ label{
 }
 
 #PaymentForm {
-  background-color: #ddeefc;
+  background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
 }
 

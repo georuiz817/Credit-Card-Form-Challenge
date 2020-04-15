@@ -9,26 +9,16 @@ const CreditBox = () => {
   const [CardHolder, setCardHolder] = useState('');
   const [ExpM, setExpM] = useState('');
   const [ExpY, setExpY] = useState('');
-  const [Cvv, setCvv] = useState('');
-  const [Focus, setFocus] = useState('')
+  const [CVC, setCVC] = useState('');
 
 
-  let handleInputFocus = (e) => {
-    setFocus({ Focus: e.target.name });
-    console.log({Focus})
-  }
-
-
-
-
-   return (
+  return (
     <div>
         <div id="PaymentForm">
             <Cards
-                cvc={Cvv}
+                cvc={CVC}
                 expiry={ExpM + ExpY}
                 name={CardHolder}
-                focus={Focus}
                 number={CardNum}
             />
         </div>
@@ -37,22 +27,22 @@ const CreditBox = () => {
                 <form className="form-bar">
                     <Row>
                         <Col>
-                            <label for='cardnumber'>Card Number</label>
+                            <label htmlFor='cardnumber'>Card Number</label>
                             <input className="form-control" value={CardNum} maxLength={16}  type="text" name="cardnumber" onChange={(e)=> setCardNum(e.target.value)}/>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <label for='cardholder'>Card Holder</label>
+                            <label htmlFor='cardholder'>Card Holder</label>
                             <input className="form-control" value={CardHolder} type="text" name="cardholder" onChange={(e)=> setCardHolder(e.target.value)}/>
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={4}>
-                            <label for='month'>Expiration Date</label>
-                            <select type="select" value={ExpM} name="exp" class="form-control exp" onChange={(e)=>
+                            <label htmlFor='month'>Expiration Date</label>
+                            <select type="select" value={ExpM} name="exp" className="form-control exp" onChange={(e)=>
                             setExpM(e.target.value)}>
-                                <option value="" disabled="disabled" selected="selected">Mon</option>
+                                <option value="" disabled="disabled" defaultValue="selected">Mon</option>
                                 <option value={'01'}>01</option>
                                 <option value={'02'}>02</option>
                                 <option value={'03'}>03</option>
@@ -68,28 +58,28 @@ const CreditBox = () => {
                             </select>
                         </Col>
                         <Col xs={4}>
-                            <label for='year'>
+                            <label htmlFor='year'>
                             <br></br>
                             </label>
-                            <select type="select" value={ExpY} name="exp" id='year' class="form-control exp" onChange={(e)=>
+                            <select type="select" value={ExpY} name="exp" id='year' className="form-control exp" onChange={(e)=>
                                 setExpY(e.target.value)}>
-                                <option value="" disabled="disabled" selected="selected">Year</option>
-                                <option value={2020}>2020</option>
-                                <option value={2021}>2021</option>
-                                <option value={2022}>2022</option>
-                                <option value={2023}>2023</option>
-                                <option value={2024}>2024</option>
-                                <option value={2025}>2025</option>
-                                <option value={2026}>2026</option>
-                                <option value={2027}>2027</option>
-                                <option value={2028}>2028</option>
-                                <option value={2029}>2029</option>
-                                <option value={2030}>2030</option>
+                                <option value="" disabled="disabled" defaultValue="selected">Year</option>
+                                <option value={20}>2020</option>
+                                <option value={21}>2021</option>
+                                <option value={22}>2022</option>
+                                <option value={23}>2023</option>
+                                <option value={24}>2024</option>
+                                <option value={25}>2025</option>
+                                <option value={26}>2026</option>
+                                <option value={27}>2027</option>
+                                <option value={28}>2028</option>
+                                <option value={29}>2029</option>
+                                <option value={30}>2030</option>
                             </select>
                         </Col>
                         <Col className='cvv-class' lg={4}>
-                            <label for='cvv'>CVV</label>
-                            <input id='cvv' onFocus={handleInputFocus} className="form-control" value={Cvv} type="number" max='9999' placeholder="CVV" name="Cvv" onChange={(e)=> setCvv(e.target.value)}/>
+                            <label htmlFor='cvv'>CVV</label>
+                            <input id='cvv' className="form-control" value={CVC} type="text" placeholder="CVV" name="CVC" onChange={(e)=> setCVC(e.target.value)}/>
                         </Col>
                     </Row>
                     <Row>

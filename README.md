@@ -1,6 +1,6 @@
 ![Website](/src/homePhoto.png)
 
-## Credit Card Challenge:
+## Credit Card Challenge
 
 Designed a user friendly form that would be reflected on the credit card example using React Hooks. 
 
